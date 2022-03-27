@@ -1,0 +1,21 @@
+npm init // para que aparezca el package.json
+
+npm install -g sass // para instalar sass
+
+npm install -D node-sass nodemon // para crear el pacjson-lock.json
+
+sass --version // para ver la version de sass
+
+sass es como un css mas fuerte. Pero los navegadores solo reconocen css, por lo qeu isaremos un traductor para transformar el sass en css
+
+sass --watch scss/style.scss css/style.css // comando para que el archivo css copile el archivo scss y asi el navegador pueda reconocerlo
+
+podemos crear "hijos" que luego los importamos al contenedor principal. Basicamente para tener todo mas ordenado
+
+en la carpeta componentes se ponen los estilos especificos y en la carpeta base ponemos los estilos globales(como coleres, tamaños, etc)
+
+para dar nombre a una variable base ponemos $elNombreDeLaVariable: ValorDeLaVariable;
+
+extend %nombre // basicamnete es para crear un cmponente con ciertas propiedades, y estas las podemos llamar dentro de una clase
+
+mixin // basicamente creamos una funcion con parametros, y cada parametro completa una valor a una propiedad

@@ -1,0 +1,24 @@
+@import '../base/listas';
+@import '../base/maps';
+
+header{
+    background-color: nth($colores, 3);
+    nav{
+        width: 90%;
+        margin: auto;
+        background-color: aqua;
+        h1{
+            color: map-get($header, bg-header);
+            border: map-get($header, border);
+        }
+        ul{
+            li{
+                list-style: none;
+                // con el & basicamente indicamos que a este elemento le vamos a hacer algo
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

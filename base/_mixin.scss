@@ -1,0 +1,19 @@
+
+
+@mixin colores($colors, $ancho, $borde){
+    background-color: $colors;
+    width: $ancho;
+    padding: $borde;
+}
+
+.mixin{
+    div{
+        @include colores(red, 200px, 50px )
+    }
+}
+
+.mixin2{
+    div{
+        @include colores(blue, 100px, 30px)
+    }
+}

@@ -1,0 +1,10 @@
+$color-principal: green;
+$color-secundario: red;
+
+
+.btn-menu{
+    border: 2px solid darken($color-principal, 20%);
+    &:hover{
+        background-color: lighten($color-secundario, 20%);
+    }
+}
